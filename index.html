@@ -12,7 +12,8 @@
         extend: {
           colors: {
             amarelo: '#E6C744',
-            cinza: '#C2C8DA'
+            cinza: '#C2C8DA',
+            cinzaEscuro: '#7C7C7C'
 
           }
         }
@@ -29,11 +30,24 @@
 </head>
 
 <body>
-  <header>
 
+  <header class="flex items-center justify-between px-[6.25rem] py-[2.1875rem]">
+    <div>
+      <img src="./images/logo.png" alt="fashion">
+    </div>
+
+    <nav class="flex gap-[4rem] *:uppercase *:leading-[3.875rem]">
+      <a class="hover:bg-amarelo">catalogue</a>
+      <a class="hover:bg-amarelo">fashion</a>
+      <a class="hover:bg-amarelo">favourite</a>
+      <a class="hover:bg-amarelo">lifestyle</a>
+      <a class=" bg-black text-white px-[1.375rem] rounded-md  hover:bg-amarelo hover:text-black duration-200"
+        href="">sing up</a>
+
+
+    </nav>
 
   </header>
-
   <main>
     <section id="banner">
       <div class="px-[100px] pt-[69px]">
@@ -57,6 +71,7 @@
         </div>
 
     </section>
+
     <section id="novidades">
 
       <div class="px-[100px] pt-[69px]">
@@ -104,20 +119,188 @@
 
 
     </section>
-    <section id="promocao">
+    <section id="promocao" class="pt-16">
+      <div class="flex w-full gap-0">
+        <img src="./img/model_banner.png" alt="banneresquerda" class="h-[600px] block">
+        <img src="./img/Estrela.png" alt="star" class="absolute z-10 w-[45px] h-[45px] top-[170px] left-[50px]">
+        <img src="./img/Estrela.png" alt="star" class="absolute z-10 w-[45px] h-[45px] top-[360px] left-[100px]">
+        <img src="./img/Estrela.png" alt="star" class="absolute z-10 w-[45px] h-[45px] top-[120px] left-[510px]">
+        <img src="./img/Estrela.png" alt="star" class="absolute z-10 w-[45px] h-[45px] top-[480px] left-[570px]">
+        <div class="relative w-full h-[600px] -ml-[2px]">
+          <img src="./img/BackgroundYellow.png" alt="bgyellow"
+            class="absolute top-0 left-0 w-full h-full object-cover z-0 block">
+          <img src="./img/RetanguloBranco.png" alt="rtbranco"
+            class="absolute z-10 w-[405px] h-[115px] top-[55px] left-[100px]">
+          <p class="z-10 absolute font-extrabold text-[90px] left-[110px] top-[50px]">PAYDAY</p>
+          <p class="z-10 absolute font-extrabold text-[90px] left-[110px] top-[150px]">SALE NOW</p>
+          <p class="z-10 absolute font-medium text-[#231300] text-[22px] left-[112px] top-[290px]">Spend minimal $100
+            get 30% off<br>
+            voucher code for your next purchase</p>
+          <p class="z-10 absolute font-extrabold text-[20px] left-[112px] top-[370px]">1 June - 10 June 2021</p>
+          <p class="z-10 absolute font-medium text-[22px] left-[112px] top-[400px]">*Terms & Conditions apply</p>
+          <p
+            class="z-10 absolute font-semibold text-[17px] left-[112px] top-[460px] bg-[#000000] text-white rounded cursor-pointer hover:bg-white hover:text-[#000000] transition-all duration-300 ease-in-out py-5 px-9 uppercase">
+            Shop Now</p>
 
+        </div>
+      </div>
+      </div>
     </section>
-    <section id="favoritos">
 
-    </section>
-    <section id="aplicativo">
+    <section id="favoritos" class="px-10 pt-16">
+      <div class="relative inline-block mb-12">
+        <img src="./img/VetorAmarelo.png" alt="amarelo" class="absolute z-0 w-[107px] h-[18px] left-[150px] top-6">
+        <p class="font-black text-[27px] w-[289px] h-[36px] z-10 relative">Young's Favourite</p>
+      </div>
+      <div class="flex gap-8 place-content-evenly rounded-lg">
+        <div class="flex flex-col transition-transform duration-300 hover:scale-105 cursor-pointer hover:underline">
+          <img src="./img/modelo_1.png" alt="model1" class="w-[472px] h-[325px] rounded-xl object-cover">
+          <p class="mt-4 font-medium text-lg">All Under $40</p>
+          <div class="flex justify-between items-center w-full mt-1">
+            <p class="text-[#7F7F7F] text-xs">Explore Now!</p>
+            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] -mt-12">
+          </div>
+        </div>
 
+        <div class="flex flex-col transition-transform duration-300 hover:scale-105 cursor-pointer hover:underline">
+          <img src="./img/modelo_2.png" alt="model2" class="w-[474px] h-[325px] rounded-xl object-cover">
+          <p class="mt-4 font-medium text-lg">All Under $40</p>
+          <div class="flex justify-between items-center w-full mt-1">
+            <p class="text-[#7F7F7F] text-xs">Explore Now!</p>
+            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] -mt-12">
+          </div>
+        </div>
+      </div>
     </section>
+    <section id="aplicativo" class="mt-[260px] mb-[125px]">
+      <div class="pl-[8rem] -mb-[16rem] mt-[5rem]">
+        <h1
+          class="text-justify text-5xl pl-[2.5rem] h-[170px] font-poppins font-black tracking-[.96px] leading-[150%] ">
+          DOWNLOAD APP &
+          <br>
+          GET THE VOUCHER!
+        </h1>
+
+        <h2
+          class="text-cinzaEscuro font-medium pl-[2.5rem] w-[419px] h-[20px] text-[24px] font-poppins leading-[35px]  tracking-[-4%] ">
+          Get 30% off for first transaction using <br>
+          Rondovision mobile app for now.
+
+        </h2>
+
+      </div>
+
+      <article class="flex justify-between">
+        <div class="flex items-end  pl-[10rem] pb-[7rem] gap-[3rem]">
+          <a href=""><img src="./images/Rectangle 55 (1).png" alt=""></a>
+          <a href=""><img src="./images/Rectangle 18 (1).png" alt=""></a>
+        </div>
+        <div class="pr-[3rem]">
+          <img class="h-[600px] w-[500px] pr-[20px] -mt-[1.5rem] " src="./images/Group 84 (1).png" alt="">
+        </div>
+      </article>
+    </section>
+
+
     <section id="noticias">
+      <aside class="bg-amarelo pb-[10rem]">
+        <h1
+          class="text-white pt-[10rem] font-black font-poppins text-[55px] leading-[70px] tracking-[3%] flex justify-center ">
+          JOIN SHOPPING COMMUNITY TO <br>GET MONTHLY PROMO
+        </h1>
+        <h3 style="color: white;"
+          class=" pt-[1rem] font-poppins  font-light text-[32px]  leading-[35px] tracking-[3%] flex justify-center  pb-[200px]  ">
+          Type your email down below and be young wild generation
+        </h3>
+        <div class="-mt-[5rem] flex gap-4 w-[35rem] p-4 rounded-[10px] bg-white m-auto">
+          <input
+            class="w-[400px] font-poppins font-light text-2xl tracking-[3%]"
+            placeholder="Add your email here" type="text" />
+            <button
+              class="bg-black text-white rounded-[10px] inset-y-2 inset-x-1 font-poppins leading-[35px] text-[33px] tracking-[3%] w-[145px] h-[70px]">SEND</button>
+
+        </div>
+
+
+      </aside>
+
 
     </section>
   </main>
   <footer>
+    <section class=" pl-[4rem]   h-[35rem] flex justify-between items-center " style="background-color: black;   ">
+
+      <aside class=" h-[19rem]  ">
+
+        <h1 class=" font-poppins text-[40px] font-black  leading-[100%] tracking-[3%]   " style="color: white;"> FASHION
+        </h1>
+        <h3 class=" pt-[2rem] pb-[2rem]  font-roboto font-normal text-2xl leading-[40px]  tracking-[2%] "
+          style=" color:#8E8E8E ;"> Complete your style with awesome <br>clothes from us. </h3>
+
+
+        <div class="flex gap-[1rem]">
+          <a href=""><img src="./images/facebook.png" alt=""></a>
+          <a href=""><img src="./images/instagram.png" alt=""></a>
+          <a href=""><img src="./images/tw.png" alt=""></a>
+          <a href=""> <img src="./images/likedin.png" alt=""></a>
+        </div>
+
+
+      </aside>
+
+
+
+      <aside class="flex justify-between gap-[5rem] items-center pr-[4rem] ">
+        <div class=" flex flex-col gap-[1.5rem] ">
+          <h2 class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color: white;"> Company
+          </h2>
+
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href="">About</a>
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href="">contact us</a>
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href="">support</a>
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href="">careers</a>
+
+        </div>
+
+        <div class=" flex flex-col gap-[1.5rem] ">
+          <h2 class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color: white;">Quick
+            Link </h2>
+
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href="">Share Location</a>
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href=" ">Orders Tracking </a>
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href=""> Size Guide </a>
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href="">FAQs</a>
+
+
+        </div>
+
+        <div class=" flex flex-col gap-[1.5rem] h-[18.5rem] ">
+          <h2 class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color: white;"> Legal
+          </h2>
+
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href="">Terms & conditions</a>
+          <a class="  font-roboto font-normal text-2xl leading-[40px] tracking-[2%]    " style="color:#8E8E8E ;"
+            href=""> Privacy Policy</a>
+
+
+
+        </div>
+
+
+      </aside>
+
+
+    </section>
+
 
   </footer>
 </body>
