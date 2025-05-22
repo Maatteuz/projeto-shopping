@@ -119,55 +119,80 @@
 
 
     </section>
-    <section id="promocao" class="pt-16">
-      <div class="flex w-full gap-0">
-        <img src="./img/model_banner.png" alt="banneresquerda" class="h-[600px] block">
-        <img src="./img/Estrela.png" alt="star" class="absolute z-10 w-[45px] h-[45px] top-[170px] left-[50px]">
-        <img src="./img/Estrela.png" alt="star" class="absolute z-10 w-[45px] h-[45px] top-[360px] left-[100px]">
-        <img src="./img/Estrela.png" alt="star" class="absolute z-10 w-[45px] h-[45px] top-[120px] left-[510px]">
-        <img src="./img/Estrela.png" alt="star" class="absolute z-10 w-[45px] h-[45px] top-[480px] left-[570px]">
-        <div class="relative w-full h-[600px] -ml-[2px]">
-          <img src="./img/BackgroundYellow.png" alt="bgyellow"
-            class="absolute top-0 left-0 w-full h-full object-cover z-0 block">
-          <img src="./img/RetanguloBranco.png" alt="rtbranco"
-            class="absolute z-10 w-[405px] h-[115px] top-[55px] left-[100px]">
-          <p class="z-10 absolute font-extrabold text-[90px] left-[110px] top-[50px]">PAYDAY</p>
-          <p class="z-10 absolute font-extrabold text-[90px] left-[110px] top-[150px]">SALE NOW</p>
-          <p class="z-10 absolute font-medium text-[#231300] text-[22px] left-[112px] top-[290px]">Spend minimal $100
-            get 30% off<br>
-            voucher code for your next purchase</p>
-          <p class="z-10 absolute font-extrabold text-[20px] left-[112px] top-[370px]">1 June - 10 June 2021</p>
-          <p class="z-10 absolute font-medium text-[22px] left-[112px] top-[400px]">*Terms & Conditions apply</p>
-          <p
-            class="z-10 absolute font-semibold text-[17px] left-[112px] top-[460px] bg-[#000000] text-white rounded cursor-pointer hover:bg-white hover:text-[#000000] transition-all duration-300 ease-in-out py-5 px-9 uppercase">
-            Shop Now</p>
+    <section id="promocao" class="relative mt-[100px] p-0 lg:p-[50px] xl:p-0">
+  <div class="relative overflow-hidden">
+    <img src="./img/model_banner.png" alt="mulherbanner" class="block  object-cover max-w-[180%] sm:w-full">
+  </div>
+  <div class="text-center py-10 bg-white sm:text-left sm:absolute sm:top-1/2 sm:right-0 sm:w-[45%] sm:translate-y-[-50%] sm:bg-transparent">
+    <h1 class="font-bold text-[40px] mb-0 
+                    sm:text-[35px] sm:leading-[60px]
+                    lg:text-[65px] lg:leading-[95px]
+                    xl:text-[75px] xl:mb-6
+                    2xl:text-[85px] 2xl:mb-8 2xl:leading-[105px]">
+    <span class="relative inline-block
+                after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-[-1rem] after:right-[-1rem] after:bg-white after:rotate-[-3deg] after:z-[-1]"
+                >PAYDAY</span><br />SALE NOW</h1>
+       <p class="text-[13px] font-medium mb-5
+                    md:text-[16px]
+                    lg:text-[21px]
+                    xl:text-[26px]
+                    2xl:text-[32px]">Spend minimal $100 get 30% off<br />voucher code for your next purchase</p>
+       <p class="font-bold mb-5 text-[13px]
+	                  sm:mb-0
+                    md:text-[16px]
+                    lg:text-[21px]
+                    xl:text-[26px]
+                    2xl:text-[32px]">1 June - 10 June 2021</p>
+       <p class="text-[13px]  mb-5
+	                  md:text-[16px]
+                    lg:text-[21px]
+                    xl:text-[26px]
+                    2xl:text-[32px]">*Terms & Conditions apply</p>
+      <button class="z-10 font-semibold text-[17px]  bg-[#000000] text-white rounded hover:bg-white hover:text-black transition-all duration-300 ease-in-out py-2 px-3 uppercase
+                    sm:text-[20px]
+                    lg:text-[28px]
+                    xl:text-[32px] xl:px-10 xl:py-4
+                    2xl:text-[40px]">SHOP NOW</button>
+  </div>
+</section>
 
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="favoritos" class="px-10 pt-16">
-      <div class="relative inline-block mb-12">
-        <img src="./img/VetorAmarelo.png" alt="amarelo" class="absolute z-0 w-[107px] h-[18px] left-[150px] top-6">
-        <p class="font-black text-[27px] w-[289px] h-[36px] z-10 relative">Young's Favourite</p>
-      </div>
-      <div class="flex gap-8 place-content-evenly rounded-lg">
-        <div class="flex flex-col transition-transform duration-300 hover:scale-105 cursor-pointer hover:underline">
-          <img src="./img/modelo_1.png" alt="model1" class="w-[472px] h-[325px] rounded-xl object-cover">
-          <p class="mt-4 font-medium text-lg">All Under $40</p>
+    <section id="favoritos" class="px-5 pt-[100px] mb-[100px] sm:pl-[100px]">
+    <h1 class="mb-[40px] pl-0.5 bg-[url('./img/VetorAmarelo.png')] bg-no-repeat bg-[position:bottom_right] bg-[length:90px] inline-block font-extrabold text-[28px] 
+                    sm:text-[24px] 
+                    lg:text-[32px] 
+                    xl:text-[36px] 
+                    2xl:text-[40px]">Young's Favourite</h1> 
+      <div class="flex flex-col gap-8 
+                    sm:flex-row 
+                    xl:gap-10">
+        <div class="flex flex-col transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img src="./img/modelo_1.png" alt="model1" class="w-[560px] h-[392px] object-cover rounded-xl 
+                    sm:w-[217px] sm:h-[152px] 
+                    md:w-[271px] md:h-[198px] 
+                    lg:w-[399px] lg:h-[275px] 
+                    xl:w-[590px] xl:h-[404px] 
+                    2xl:w-[638px] 
+                    2xl:h-[439px]">
+          <p class="mt-4 font-medium text-lg 
+                    lg:text-2xl 
+                    2xl:text-[32px]">Trending on Instagram</p>
           <div class="flex justify-between items-center w-full mt-1">
-            <p class="text-[#7F7F7F] text-xs">Explore Now!</p>
-            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] -mt-12">
+            <p class="text-[#7F7F7F] text-xl sm:text-sm 
+                    md:text-base 
+                    lg:text-xl 
+                    2xl:text-[28px]">Explore Now!</p>
+            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] 
+                    sm:w-4 xl:mb-7 
+                    xl:w-5">
           </div>
         </div>
 
-        <div class="flex flex-col transition-transform duration-300 hover:scale-105 cursor-pointer hover:underline">
-          <img src="./img/modelo_2.png" alt="model2" class="w-[474px] h-[325px] rounded-xl object-cover">
-          <p class="mt-4 font-medium text-lg">All Under $40</p>
+        <div class="transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img src="./img/modelo_2.png" alt="model2" class="w-[560px] h-[392px] object-cover rounded-xl sm:w-[217px] sm:h-[152px] md:w-[271px] md:h-[198px] lg:w-[399px] lg:h-[275px] xl:w-[590px] xl:h-[404px] 2xl:w-[638px] 2xl:h-[439px]">
+          <p class="mt-4 font-medium text-lg lg:text-2xl 2xl:text-[32px]">All Under $40</p>
           <div class="flex justify-between items-center w-full mt-1">
-            <p class="text-[#7F7F7F] text-xs">Explore Now!</p>
-            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] -mt-12">
+            <p class="text-[#7F7F7F] text-xl sm:text-sm md:text-base lg:text-xl 2xl:text-[28px]">Explore Now!</p>
+            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] sm:w-4 xl:mb-7 xl:w-5">
           </div>
         </div>
       </div>
