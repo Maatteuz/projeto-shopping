@@ -31,23 +31,37 @@
 
 <body>
 
-  <header class="flex items-center justify-between px-[6.25rem] py-[2.1875rem]">
-    <div>
-      <img src="./images/logo.png" alt="fashion">
-    </div>
+<header class="flex items-center justify-between px-[10px] py-[15px] sm:py-[20px] sm:px-[90px] lg:w-full lg:mx-auto">
+  <div class="flex-shrink-0">
+    <img src="./images/logo.png" alt="fashion" class="w-[150px] sm:w-[200px] sm:h-[50px] md:w-[237px] md:h-[60px]">
+  </div>
 
-    <nav class="flex gap-[4rem] *:uppercase *:leading-[3.875rem]">
-      <a class="hover:bg-amarelo">catalogue</a>
-      <a class="hover:bg-amarelo">fashion</a>
-      <a class="hover:bg-amarelo">favourite</a>
-      <a class="hover:bg-amarelo">lifestyle</a>
-      <a class=" bg-black text-white px-[1.375rem] rounded-md  hover:bg-amarelo hover:text-black duration-200"
-        href="">sing up</a>
+  <!-- Para telas abaixo de 1024 -->
+  <div class="relative lg:hidden">
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="cursor-pointer top-4 right-4 z-50 w-12 h-12 flex items-center justify-center">
+      <span class="text-xl text-black transition hover:opacity-70 hover:scale-110">☰</span>
+    </label>
 
-
+    <nav class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md transform scale-0 peer-checked:scale-100 origin-top-right transition-transform duration-200 ease-out z-40 flex flex-col p-4 gap-2 *:uppercase *:leading-[2.5rem]">
+      <a class="hover:bg-amarelo transition px-3 py-1 rounded">catalogue</a>
+      <a class="hover:bg-amarelo transition px-3 py-1 rounded">fashion</a>
+      <a class="hover:bg-amarelo transition px-3 py-1 rounded">favourite</a>
+      <a class="hover:bg-amarelo transition px-3 py-1 rounded">lifestyle</a>
+      <a class="bg-black text-white px-[1.375rem] py-1 rounded-md hover:bg-amarelo hover:text-black transition" href="">sign up</a>
     </nav>
+  </div>
 
-  </header>
+  <!-- Para telas a partir de 1024 -->
+  <nav class="hidden lg:flex lg:items-center lg:gap-6 *:uppercase *:leading-[2.5rem]">
+    <a class="text-black hover:text-amarelo transition">catalogue</a>
+    <a class="text-black hover:text-amarelo transition">fashion</a>
+    <a class="text-black hover:text-amarelo transition">favourite</a>
+    <a class="text-black hover:text-amarelo transition">lifestyle</a>
+    <a class="ml-6 bg-black text-white px-[1.375rem] py-1 rounded-md hover:bg-amarelo hover:text-black transition">
+      sign up</a>
+  </nav>
+</header>
   <main>
     <section id="banner">
       <div class="px-[100px] pt-[69px]">
