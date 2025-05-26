@@ -32,24 +32,37 @@
 
 <body>
 
-  <header class="flex items-center justify-between px-[6.25rem] py-[2.1875rem]">
-    <div>
-      <img src="./images/logo.png" alt="fashion">
-    </div>
+<header class="flex items-center justify-between px-[10px] py-[15px] sm:py-[20px] sm:px-[90px] lg:w-full lg:mx-auto">
+  <div class="flex-shrink-0">
+    <img src="./images/logo.png" alt="fashion" class="w-[150px] sm:w-[200px] sm:h-[50px] md:w-[237px] md:h-[60px]">
+  </div>
 
-    <nav class="flex gap-[4rem] *:uppercase *:leading-[3.875rem]">
-      <a class="hover:bg-amarelo">catalogue</a>
-      <a class="hover:bg-amarelo">fashion</a>
-      <a class="hover:bg-amarelo">favourite</a>
-      <a class="hover:bg-amarelo">lifestyle</a>
-      <a class=" bg-black text-white px-[1.375rem] rounded-md  hover:bg-amarelo hover:text-black duration-200"
-        href="">sing up</a>
+  <!-- Para telas abaixo de 1024 -->
+  <div class="relative lg:hidden">
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
+    <label for="menu-toggle" class="cursor-pointer top-4 right-4 z-50 w-12 h-12 flex items-center justify-center">
+      <span class="text-xl text-black transition hover:opacity-70 hover:scale-110">☰</span>
+    </label>
 
-
+    <nav class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md transform scale-0 peer-checked:scale-100 origin-top-right transition-transform duration-200 ease-out z-40 flex flex-col p-4 gap-2 *:uppercase *:leading-[2.5rem]">
+      <a class="hover:bg-amarelo transition px-3 py-1 rounded">catalogue</a>
+      <a class="hover:bg-amarelo transition px-3 py-1 rounded">fashion</a>
+      <a class="hover:bg-amarelo transition px-3 py-1 rounded">favourite</a>
+      <a class="hover:bg-amarelo transition px-3 py-1 rounded">lifestyle</a>
+      <a class="bg-black text-white px-[1.375rem] py-1 rounded-md hover:bg-amarelo hover:text-black transition" href="">sign up</a>
     </nav>
+  </div>
 
-  </header>
-
+  <!-- Para telas a partir de 1024 -->
+  <nav class="hidden lg:flex lg:items-center lg:gap-6 *:uppercase *:leading-[2.5rem]">
+    <a class="text-black hover:text-amarelo transition">catalogue</a>
+    <a class="text-black hover:text-amarelo transition">fashion</a>
+    <a class="text-black hover:text-amarelo transition">favourite</a>
+    <a class="text-black hover:text-amarelo transition">lifestyle</a>
+    <a class="ml-6 bg-black text-white px-[1.375rem] py-1 rounded-md hover:bg-amarelo hover:text-black transition">
+      sign up</a>
+  </nav>
+</header>
   <main>
     <section id="banner">
       <div class="px-10 sm:px-16 md:px-[150px] lg:px-12 pt-4 sm:pt-6 md:pt-8 lg:pt-12">
@@ -112,6 +125,7 @@
         </div>
       </div>
     </section>
+<<<<<<< HEAD
     
    <section id="promocao" class="pt-16">
       <div class="flex w-full gap-0">
@@ -135,34 +149,83 @@
           <p
             class="z-10 absolute font-semibold text-[17px] left-[112px] top-[460px] bg-[#000000] text-white rounded cursor-pointer hover:bg-white hover:text-[#000000] transition-all duration-300 ease-in-out py-5 px-9 uppercase">
             Shop Now</p>
+=======
+    <section id="promocao" class="relative mt-[100px] p-0 lg:p-[50px] xl:p-0">
+  <div class="relative overflow-hidden">
+    <img src="./img/model_banner.png" alt="mulherbanner" class="block  object-cover max-w-[180%] sm:w-full">
+  </div>
+  <div class="text-center py-10 bg-white sm:text-left sm:absolute sm:top-1/2 sm:right-0 sm:w-[45%] sm:translate-y-[-50%] sm:bg-transparent">
+    <h1 class="font-bold text-[40px] mb-0 
+                    sm:text-[35px] sm:leading-[60px]
+                    lg:text-[65px] lg:leading-[95px]
+                    xl:text-[75px] xl:mb-6
+                    2xl:text-[85px] 2xl:mb-8 2xl:leading-[105px]">
+    <span class="relative inline-block
+                after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-[-1rem] after:right-[-1rem] after:bg-white after:rotate-[-3deg] after:z-[-1]"
+                >PAYDAY</span><br />SALE NOW</h1>
+       <p class="text-[13px] font-medium mb-5
+                    md:text-[16px]
+                    lg:text-[21px]
+                    xl:text-[26px]
+                    2xl:text-[32px]">Spend minimal $100 get 30% off<br />voucher code for your next purchase</p>
+       <p class="font-bold mb-5 text-[13px]
+	                  sm:mb-0
+                    md:text-[16px]
+                    lg:text-[21px]
+                    xl:text-[26px]
+                    2xl:text-[32px]">1 June - 10 June 2021</p>
+       <p class="text-[13px]  mb-5
+	                  md:text-[16px]
+                    lg:text-[21px]
+                    xl:text-[26px]
+                    2xl:text-[32px]">*Terms & Conditions apply</p>
+      <button class="z-10 font-semibold text-[17px]  bg-[#000000] text-white rounded hover:bg-white hover:text-black transition-all duration-300 ease-in-out py-2 px-3 uppercase
+                    sm:text-[20px]
+                    lg:text-[28px]
+                    xl:text-[32px] xl:px-10 xl:py-4
+                    2xl:text-[40px]">SHOP NOW</button>
+  </div>
+</section>
+>>>>>>> 5491f7728be82853f6d604af9181de29aebaa779
 
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="favoritos" class="px-10 pt-16">
-      <div class="relative inline-block mb-12">
-        <img src="./img/VetorAmarelo.png" alt="amarelo" class="absolute z-0 w-[107px] h-[18px] left-[150px] top-6">
-        <p class="font-black text-[27px] w-[289px] h-[36px] z-10 relative">Young's Favourite</p>
-      </div>
-      <div class="flex gap-8 place-content-evenly rounded-lg">
-        <div class="flex flex-col transition-transform duration-300 hover:scale-105 cursor-pointer hover:underline">
-          <img src="./img/modelo_1.png" alt="model1" class="w-[472px] h-[325px] rounded-xl object-cover">
-          <p class="mt-4 font-medium text-lg">All Under $40</p>
+    <section id="favoritos" class="px-5 pt-[100px] mb-[100px] sm:pl-[100px]">
+    <h1 class="mb-[40px] pl-0.5 bg-[url('./img/VetorAmarelo.png')] bg-no-repeat bg-[position:bottom_right] bg-[length:90px] inline-block font-extrabold text-[28px] 
+                    sm:text-[24px] 
+                    lg:text-[32px] 
+                    xl:text-[36px] 
+                    2xl:text-[40px]">Young's Favourite</h1> 
+      <div class="flex flex-col gap-8 
+                    sm:flex-row 
+                    xl:gap-10">
+        <div class="flex flex-col transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img src="./img/modelo_1.png" alt="model1" class="w-[560px] h-[392px] object-cover rounded-xl 
+                    sm:w-[217px] sm:h-[152px] 
+                    md:w-[271px] md:h-[198px] 
+                    lg:w-[399px] lg:h-[275px] 
+                    xl:w-[590px] xl:h-[404px] 
+                    2xl:w-[638px] 
+                    2xl:h-[439px]">
+          <p class="mt-4 font-medium text-lg 
+                    lg:text-2xl 
+                    2xl:text-[32px]">Trending on Instagram</p>
           <div class="flex justify-between items-center w-full mt-1">
-            <p class="text-[#7F7F7F] text-xs">Explore Now!</p>
-            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] -mt-12">
+            <p class="text-[#7F7F7F] text-xl sm:text-sm 
+                    md:text-base 
+                    lg:text-xl 
+                    2xl:text-[28px]">Explore Now!</p>
+            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] 
+                    sm:w-4 xl:mb-7 
+                    xl:w-5">
           </div>
         </div>
 
-        <div class="flex flex-col transition-transform duration-300 hover:scale-105 cursor-pointer hover:underline">
-          <img src="./img/modelo_2.png" alt="model2" class="w-[474px] h-[325px] rounded-xl object-cover">
-          <p class="mt-4 font-medium text-lg">All Under $40</p>
+        <div class="transition-transform duration-300 hover:scale-105 cursor-pointer">
+          <img src="./img/modelo_2.png" alt="model2" class="w-[560px] h-[392px] object-cover rounded-xl sm:w-[217px] sm:h-[152px] md:w-[271px] md:h-[198px] lg:w-[399px] lg:h-[275px] xl:w-[590px] xl:h-[404px] 2xl:w-[638px] 2xl:h-[439px]">
+          <p class="mt-4 font-medium text-lg lg:text-2xl 2xl:text-[32px]">All Under $40</p>
           <div class="flex justify-between items-center w-full mt-1">
-            <p class="text-[#7F7F7F] text-xs">Explore Now!</p>
-            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] -mt-12">
-          </div>
+            <p class="text-[#7F7F7F] text-xl sm:text-sm md:text-base lg:text-xl 2xl:text-[28px]">Explore Now!</p>
+            <img src="./img/Arrow.png" alt="arrow" class="w-[18px] sm:w-4 xl:mb-7 xl:w-5">
+git          </div>
         </div>
       </div>
     </section>
